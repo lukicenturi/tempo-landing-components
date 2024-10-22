@@ -1,9 +1,10 @@
+import React from "react";
 import { Button } from "@/components/ui/button.tsx";
 import { Check, Clock3 } from "lucide-react";
 
-const Earning = () => {
+const Earnings = () => {
   return (
-    <div className="p-6 rounded-xl bg-neutral-900 text-white overflow-hidden">
+    <div className="p-6 bg-neutral-900 text-white overflow-hidden">
       <div className="flex items-center justify-between mb-10">
         <div className="font-medium">Earnings</div>
         <Button
@@ -59,4 +60,4 @@ const Earning = () => {
   );
 };
 
-export default Earning;
+export default Earnings;
