@@ -1,8 +1,27 @@
+import CreateNewCard from "./CreateNewCard.tsx";
+import TaskCard from "./TaskCard.tsx";
+import AddLabelsCard from "./AddLabelsCard.tsx";
+import Navigation from "./Navigation.tsx";
+import AssignTo from "./AssignTo.tsx";
+import ProjectCard from "./ProjectCard.tsx";
+import WeeklyProgress from "./WeeklyProgress.tsx";
+import Activity from './Activity.tsx';
+
 function Home() {
   return (
-    <div className="w-screen h-screen">
+    <div className="grid grid-cols-4 gap-8 p-2 bg-neutral-100 min-h-screen items-start">
+      <CreateNewCard />
+      <TaskCard />
+      <AddLabelsCard />
+      <div className="col-span-4">
+        <Navigation />
+      </div>
+      <AssignTo />
+      <ProjectCard />
+      <WeeklyProgress />
+      <Activity />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
