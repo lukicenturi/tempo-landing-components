@@ -21,7 +21,7 @@ const AddLabelsCard = () => {
           </div>
           <Checkbox
             checked
-            className="size-6 shadow-none border-blue-500 bg-blue-100 data-[state=checked]:bg-blue-500"
+            className="size-6 shadow-none border-sky-500 bg-sky-100 data-[state=checked]:bg-sky-500"
           />
         </label>
         <label className="flex items-center py-4 cursor-pointer">
@@ -29,14 +29,14 @@ const AddLabelsCard = () => {
             <Tag className="stroke-2 stroke-white fill-neutral-300" />
             UI Design
           </div>
-          <Checkbox className="size-6 shadow-none border-blue-500 bg-blue-100 data-[state=checked]:bg-blue-500" />
+          <Checkbox className="size-6 shadow-none border-sky-500 bg-sky-100 data-[state=checked]:bg-sky-500" />
         </label>
         <label className="flex items-center py-4 cursor-pointer">
           <div className="grow flex items-center gap-3 text-sm">
             <Tag className="stroke-2 stroke-white fill-neutral-300" />
             Illustrations
           </div>
-          <Checkbox className="size-6 shadow-none border-blue-500 bg-blue-100 data-[state=checked]:bg-blue-500" />
+          <Checkbox className="size-6 shadow-none border-sky-500 bg-sky-100 data-[state=checked]:bg-sky-500" />
         </label>
       </div>
     </Card>

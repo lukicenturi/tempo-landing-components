@@ -29,7 +29,7 @@ const Absence = () => {
           <path
             d="M10 100 A90 90 0 0 1 190 100"
             stroke="orange"
-            className="stroke-orange-600"
+            className="stroke-amber-600"
             strokeWidth="20"
             fill="none"
             strokeDasharray="282.7433388230814 565.4866776461628"
@@ -44,7 +44,7 @@ const Absence = () => {
       <div className="flex flex-col pb-7">
         <div className="py-3 flex flex-wrap gap-1 items-center justify-between border-b border-neutral-800">
           <div className="text-neutral-500 text-sm">March 3, 2024</div>
-          <Badge className="bg-orange-600 font-normal w-20 text-center justify-center">
+          <Badge className="bg-amber-600 font-normal w-20 text-center justify-center">
             Pending
           </Badge>
         </div>

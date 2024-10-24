@@ -3,13 +3,13 @@ import { Badge } from "./ui/badge.tsx";
 import { Card } from "./ui/card.tsx";
 import { Button } from "./ui/button.tsx";
 import { Ellipsis, Flag, MessageSquare } from "lucide-react";
-import { Avatar } from "./ui/avatar.tsx";
+import { Avatar, AvatarImage } from "./ui/avatar.tsx";
 
 const TaskCard = () => {
   return (
     <Card className="shadow-lg border-none p-4 relative flex flex-col gap-4">
       <div className="flex justify-between">
-        <Badge className="shadow-none rounded-full text-blue-500 bg-blue-100 hover:bg-blue-200 py-1 px-3">
+        <Badge className="shadow-none rounded-full text-sky-700 bg-sky-100 hover:bg-sky-200 py-1 px-3">
           Illustration
         </Badge>
         <Button variant="ghost" className="size-6 p-1 text-neutral-400">
@@ -31,9 +31,8 @@ const TaskCard = () => {
           </div>
         </div>
         <Avatar className="size-6">
-          <img
+          <AvatarImage
             src="/avatar-4.png"
-            className="w-full h-full object-cover object-top"
             alt="Avatar"
           />
         </Avatar>

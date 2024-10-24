@@ -3,7 +3,7 @@ import { Plus, Tag, UserPlus, XIcon } from "lucide-react";
 import { Button } from "./ui/button.tsx";
 import { Textarea } from "./ui/textarea.tsx";
 import { Badge } from "./ui/badge.tsx";
-import { Avatar } from "./ui/avatar.tsx";
+import { Avatar, AvatarImage } from "./ui/avatar.tsx";
 import { Card } from "./ui/card.tsx";
 
 const CreateNewCard = () => {
@@ -25,7 +25,7 @@ const CreateNewCard = () => {
           <div className="flex items-center gap-5 py-4">
             <Tag className="stroke-2 stroke-white fill-neutral-300" />
             <div className="grow text-sm">
-              <Badge className="shadow-none rounded-full text-blue-500 bg-blue-100 hover:bg-blue-200 py-1 px-3">
+              <Badge className="shadow-none rounded-full text-sky-700 bg-sky-100 hover:bg-sky-200 py-1 px-3">
                 UI Design
               </Badge>
             </div>
@@ -40,9 +40,8 @@ const CreateNewCard = () => {
             <UserPlus className="stroke-2 stroke-neutral-300 fill-neutral-300" />
             <div className="grow flex items-center gap-3 text-sm text-neutral-600">
               <Avatar className="size-9">
-                <img
+                <AvatarImage
                   src="/avatar-3.png"
-                  className="w-full h-full object-cover object-top"
                   alt="Avatar"
                 />
               </Avatar>
@@ -56,7 +55,7 @@ const CreateNewCard = () => {
             </Button>
           </div>
         </div>
-        <Button variant="text" className="text-white bg-indigo-500 h-12">
+        <Button variant="text" className="text-white bg-indigo-400 h-12">
           Done
         </Button>
       </div>

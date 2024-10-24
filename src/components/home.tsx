@@ -6,6 +6,11 @@ import AssignTo from "./AssignTo.tsx";
 import ProjectCard from "./ProjectCard.tsx";
 import WeeklyProgress from "./WeeklyProgress.tsx";
 import Activity from './Activity.tsx';
+import SubTaskCard from './SubTaskCard.tsx';
+import TaskProgress from './TaskProgress.tsx';
+import Buttons from './Buttons.tsx';
+import FilesAttachment from './FilesAttachment.tsx';
+import Alerts from './Alerts.tsx';
 
 function Home() {
   return (
@@ -20,6 +25,11 @@ function Home() {
       <ProjectCard />
       <WeeklyProgress />
       <Activity />
+      <SubTaskCard />
+      <TaskProgress />
+      <Buttons />
+      <FilesAttachment />
+      <Alerts />
     </div>
   );
 }

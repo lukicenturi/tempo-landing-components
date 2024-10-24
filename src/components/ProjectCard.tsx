@@ -2,7 +2,8 @@ import React from "react";
 import { Card } from "./ui/card.tsx";
 import { Button } from "./ui/button.tsx";
 import { Ellipsis, Flag, Plus } from "lucide-react";
-import { Avatar } from "./ui/avatar.tsx";
+import { Avatar, AvatarImage } from "./ui/avatar.tsx";
+import * as ProgressPrimitive from '@radix-ui/react-progress';
 
 const ProjectCard = () => {
   return (
@@ -31,41 +32,34 @@ const ProjectCard = () => {
           <div>Project Progress</div>
           <div>32%</div>
         </div>
-        {(({ progress = 0 }) => {
-          // Progress Bar Component
-          const clampedProgress = Math.min(100, Math.max(0, progress));
-
-          return (
-            <div className="rounded-full h-[5px] bg-emerald-50">
-              <div
-                className="rounded-full h-full bg-emerald-400"
-                style={{ width: `${clampedProgress}%` }}
-              ></div>
-            </div>
-          );
-        })({ progress: 32 })}
+        <ProgressPrimitive.Root
+          className="relative h-1.5 w-full overflow-hidden rounded-full bg-emerald-50"
+          value={32}
+        >
+          <ProgressPrimitive.Indicator
+            className="h-full rounded-full bg-emerald-500"
+            style={{ transform: `translateX(-${100 - 32}%)` }}
+          />
+        </ProgressPrimitive.Root>
       </div>
       <div className="flex justify-between items-center gap-4">
         <div className="flex items-center gap-3">
           <div className="flex flex-row-reverse justify-end items-center [&>:not(first-child)]:-ml-3">
             <Avatar className="size-9 border-2 border-white">
-              <img
+              <AvatarImage
                 src="/avatar-3.png"
-                className="w-full h-full object-cover object-top"
                 alt="Avatar"
               />
             </Avatar>
             <Avatar className="size-9 border-2 border-white">
-              <img
+              <AvatarImage
                 src="/avatar-4.png"
-                className="w-full h-full object-cover object-top"
                 alt="Avatar"
               />
             </Avatar>
             <Avatar className="size-9 border-2 border-white">
-              <img
+              <AvatarImage
                 src="/avatar-5.png"
-                className="w-full h-full object-cover object-top"
                 alt="Avatar"
               />
             </Avatar>

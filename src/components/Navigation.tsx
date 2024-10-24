@@ -8,10 +8,10 @@ const Navigation = () => {
   return (
     <Card className="shadow-lg border-none py-3 px-6 gap-10 flex items-center">
       <div className="flex items-center gap-2.5 text-xs font-bold">
-        <Avatar className="size-7 flex items-center justify-center bg-blue-500 text-white">
+        <Avatar className="size-7 flex items-center justify-center bg-sky-500 text-white">
           T
         </Avatar>
-        <div className="text-blue-500">TASK</div>
+        <div className="text-sky-500">TASK</div>
       </div>
       <div className="grow">
         <div className="flex flex-row-reverse items-center">
@@ -23,7 +23,7 @@ const Navigation = () => {
         </div>
       </div>
       <ul className="pl-10 flex items-center gap-9 text-sm text-neutral-400">
-        <li className="text-blue-500 font-semibold">
+        <li className="text-sky-500 font-semibold">
           <a href="#">Projects</a>
         </li>
         <li>

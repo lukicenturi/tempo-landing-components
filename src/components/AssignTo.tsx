@@ -8,7 +8,7 @@ import {
 import { Card } from "./ui/card.tsx";
 import { ChevronDown, Search, UserPlus } from "lucide-react";
 import { Input } from "./ui/input.tsx";
-import { Avatar } from "./ui/avatar.tsx";
+import { Avatar, AvatarImage } from "./ui/avatar.tsx";
 
 const AssignTo = () => {
   const [menuWidth, setMenuWidth] = useState(0);
@@ -44,12 +44,11 @@ const AssignTo = () => {
           <Search className="relative z-[1] w-4 text-neutral-500" />
         </div>
         <div>
-          <DropdownMenuItem className="cursor-pointer rounded-none flex items-center px-7 py-3 justify-between bg-blue-50 border-l-2 border-blue-500">
+          <DropdownMenuItem className="cursor-pointer rounded-none flex items-center px-7 py-3 justify-between bg-sky-50 border-l-2 border-sky-500">
             <div className="grow flex items-center gap-3 text-sm text-neutral-600">
               <Avatar className="size-9">
-                <img
+                <AvatarImage
                   src="/avatar-3.png"
-                  className="w-full h-full object-cover object-top"
                   alt="Avatar"
                 />
               </Avatar>
@@ -60,9 +59,8 @@ const AssignTo = () => {
           <DropdownMenuItem className="cursor-pointer rounded-none flex items-center px-7 py-3 justify-between">
             <div className="grow flex items-center gap-3 text-sm text-neutral-600">
               <Avatar className="size-9">
-                <img
+                <AvatarImage
                   src="/avatar-4.png"
-                  className="w-full h-full object-cover object-top"
                   alt="Avatar"
                 />
               </Avatar>
@@ -73,9 +71,8 @@ const AssignTo = () => {
           <DropdownMenuItem className="cursor-pointer rounded-none flex items-center px-7 py-3 justify-between">
             <div className="grow flex items-center gap-3 text-sm text-neutral-600">
               <Avatar className="size-9">
-                <img
+                <AvatarImage
                   src="/avatar-5.png"
-                  className="w-full h-full object-cover object-top"
                   alt="Avatar"
                 />
               </Avatar>
@@ -86,9 +83,8 @@ const AssignTo = () => {
           <DropdownMenuItem className="cursor-pointer rounded-none flex items-center px-7 py-3 justify-between">
             <div className="grow flex items-center gap-3 text-sm text-neutral-600">
               <Avatar className="size-9">
-                <img
+                <AvatarImage
                   src="/avatar-6.png"
-                  className="w-full h-full object-cover object-top"
                   alt="Avatar"
                 />
               </Avatar>

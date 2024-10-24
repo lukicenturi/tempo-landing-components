@@ -39,7 +39,7 @@ const Activity = () => {
           </div>
         </div>
         <div className="flex gap-3">
-          <Avatar className="bg-orange-400 size-7 flex items-center justify-center">
+          <Avatar className="bg-amber-400 size-7 flex items-center justify-center">
             <Flag className="stroke-2 stroke-white fill-white size-3" />
           </Avatar>
           <div className="text-sm flex flex-col gap-2">
